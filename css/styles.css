@@ -49,6 +49,10 @@
     font-size: 1.425em;
 }
 
+.navigation a:link{
+    text-decoration: none;
+}
+
 .navigation:active {
     color: #0FA0CE;
     font-weight: 700;
