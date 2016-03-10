@@ -4,7 +4,6 @@ $(function() {
 
     $('#about-h').on('inview', function (event, isInView) {
         if (isInView) {
-            console.log('about in view');
             $(".navigation a").removeClass("active");
             $("#about-nav").addClass("active");
         } else {
@@ -14,7 +13,6 @@ $(function() {
 
     $('#work-h').on('inview', function (event, isInView) {
         if (isInView) {
-            console.log('work in view');
             $(".navigation a").removeClass("active");
             $("#work-nav").addClass("active");
         } else {
@@ -24,7 +22,6 @@ $(function() {
 
     $('#contact-h').on('inview', function (event, isInView) {
         if (isInView) {
-            console.log('contact in view');
             $(".navigation a").removeClass("active");
             $("#contact-nav").addClass("active");
         } else {
@@ -32,5 +29,15 @@ $(function() {
         }
     });
 
-    
+    // page scrolling feature
+    $(function() {
+        $('a.page-scroll').bind('click', function(event) {
+            console.log("smooth scrolling...");
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1000, 'easeInOutExpo');
+            event.preventDefault();
+        });
+    });
 });
