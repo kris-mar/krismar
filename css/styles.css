@@ -29,14 +29,14 @@
 }
 
 .title {
-    font-size: 10em;
+    font-size: 8vmax;
     line-height: 1.18182em;
     font-weight: 900;
     z-index: 4;
 }
 
 .tag {
-    font-size: 1.4em;
+    font-size: 1.2vmax;
     font-weight:100;
     line-height: 1.18182em;
     max-width: 35em;
@@ -74,7 +74,7 @@
 
 .copy{
     max-width: 95%;
-    font-size: 1.2em
+    font-size: 1vmax;
 }
 
 .behance-overlay {

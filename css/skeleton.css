@@ -204,7 +204,7 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #33C3F0;
+  background-color: #0FA0CE;
   border-color: #33C3F0; }
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -383,18 +383,98 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
+/*mobile */
+@media(max-width: 399px) {
+    .title{
+        font-size:10vmax;
+        padding-top: 5vmin;
+    }
+    .tag{
+        font-size:2.3vmax;
+        max-width: 90%;
+    }
+    .nav{
+        font-size: 3vmax;
+    }
+    .circle{
+        width:60vmax;
+        height:60vmax;
+    }
+}
+/*media queries until I die */
+/* ----------- iPhone 4 and 4S ----------- */
 
-/* Larger than mobile */
-@media (min-width: 400px) {}
+/* Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    .six.columns{
+        width:100%;
+        height:85%;
+    }
+    .title {
+        font-size:15vmax;
+    }
+    .circle {
+        width:80vmax;
+        height:80vmax;
+    }
+    .tag{
+        font-size:3vmax;
+        max-width:90vw;
+    }
+}
 
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
 
-/* Larger than tablet */
-@media (min-width: 750px) {}
+/* ----------- iPhone 5 and 5S ----------- */
 
-/* Larger than desktop */
-@media (min-width: 1000px) {}
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .six.columns{
+        width:100%;
+        height:85%;
+    }
+    .title {
+        font-size:15vmax;
+    }
+    .circle {
+        width:80vmax;
+        height:80vmax;
+    }
+    .tag{
+        font-size:3vmax;
+        max-width:90vw;
+    }
+}
 
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .six.columns{
+        width:100%;
+        height:85%;
+    }
+}
+
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3) {
+    .six.columns{
+        width:100%;
+        height:85%;
+    }
+}
