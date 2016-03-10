@@ -4,6 +4,9 @@
  * Author: Matthew Frey (mmmeff)
  *    - forked from http://github.com/protonet/jquery.inview/
  */
+
+
+
 (function ($) {
     var inviewObjects = {},
         d = document,
