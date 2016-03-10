@@ -53,7 +53,12 @@
     text-decoration: none;
 }
 
-.navigation:active {
+.navigation a:active {
+    color: #0FA0CE;
+    font-weight: 700;
+}
+
+.navigation a.active {
     color: #0FA0CE;
     font-weight: 700;
 }

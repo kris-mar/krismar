@@ -12,6 +12,12 @@
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 
+    <!-- scripts -->
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script src="scripts/jquery.inview2.js"></script>
+    <script src="scripts/scrollListeners.js"></script>
+
+
 </head>
 
 <body>
@@ -23,15 +29,15 @@
                 <p class="tag">Whether it's a door labeled push when it's a pull or the betrayal of taking a bite out of an oatmeal cooking thinking it's chocolate chip, interaction experience is integral to our everyday life. Everyone craves good design and my aim is to make the world a simpler and more intuitive place.
                 </p>
                 <ul class="navigation">
-                    <li><a href="#about">-About</a></li>
-                    <li><a href="#work">-Work</a></li>
-                    <li><a href="#contact">-Contact</a></li>
+                    <li><a href="#about" id="about-nav">-About</a></li>
+                    <li><a href="#work" id="work-nav">-Work</a></li>
+                    <li><a href="#contact" id="contact-nav">-Contact</a></li>
                 </ul>
             </div>
         </div>
         <div class="six columns offset-by-six information">
             <div id="about">
-                <h1>Designer, developer, & artist</h1>
+                <h1 id="about-h">Designer, developer, & artist</h1>
                 <hr>
                 <p class="copy">
                 Hey there! I’m designer currently based in Orlando, Florida. I specialize in interaction design and I love utilizing my background in STEM, fine arts, and marketing to create well-rounded experiences. <br><br>
@@ -41,7 +47,7 @@
                 </p>
             </div>
             <div id="work">
-                <h1>Work</h1>
+                <h1 id="work-h">Work</h1>
                 <hr>
                 <div class="row">
                     <div class="six columns">
@@ -97,7 +103,7 @@
                 </div>
             </div>
         <div id="contact">
-            <h1>Contact</h1>
+            <h1 id="contact-h">Contact</h1>
             <hr>
             <p class="copy">Find me on <a href="https://www.behance.net/KristenHanlon" target="_blank"> Behance</a>,<a href="https://www.linkedin.com/in/kristen-hanlon-13252379" target="_blank"> LinkedIn,</a> and <a href="https://twitter.com/kristen_hanlon" target="_blank"> Twitter</a>!</p>
             <form class="copy">
